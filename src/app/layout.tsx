@@ -1,4 +1,6 @@
-import Header from "./components/Header/Header";
+import { Footer, Header } from "./components";
+
+import "./globals.css";
 
 export const metadata = {
   title: "Next.js",
@@ -12,8 +14,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Header />
-      <body>{children}</body>
+      <body>
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }

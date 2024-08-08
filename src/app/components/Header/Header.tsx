@@ -3,9 +3,9 @@ import React from "react";
 import styles from "./Header.module.css";
 import Link from "next/link";
 
-export default function Header() {
+export const Header = () => {
   return (
-    <div className={styles.container}>
+    <header className={styles.container}>
       <div className={styles.mainLogo}>Logo</div>
       <nav>
         <ul>
@@ -16,6 +16,7 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-    </div>
+      <hr />
+    </header>
   );
-}
+};
